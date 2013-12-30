@@ -1,4 +1,4 @@
-###Knight Path Finder
+##Knight Path Finder
 
 This code finds the shortest path that a knight can take between any two squares on a chess board.
 
