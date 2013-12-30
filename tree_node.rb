@@ -1,16 +1,14 @@
 class TreeNode
-  attr_accessor :parent, :value, :children #:size
+  attr_accessor :parent, :value, :children
 
   def initialize(parent=nil, value)
     @parent = parent
     @value = value
     @children = []
     self.parent.children << self if self.parent
-    #@size = 0
   end
 
   def add_child(node)
-    #@children.parent = nil unless left.nil?
     @children << node
     node.parent = self
   end
