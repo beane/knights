@@ -52,39 +52,4 @@ class TreeNode
   def to_s
     "Value: #{@value}"
   end
-
-  def self.test
-    root = TreeNode.new(0)
-    child_one = TreeNode.new(root,1)
-    child_two = TreeNode.new(root,4)
-    child_three = TreeNode.new(root, 5)
-
-    one_child_one = TreeNode.new(child_one, 2)
-    one_child_two = TreeNode.new(child_one, 4)
-
-    p root.dfs(4).path
-  end
 end
-
-if $PROGRAM_NAME == __FILE__
-  TreeNode.test
-  # root = TreeNode.new(1)
-  # r_one = root.add_child(TreeNode.new(2))
-  # r_one_one = r_one.add_child(TreeNode.new(3))
-  # r_two = root.add_child(TreeNode.new(9))
-  # r_two_two = r_two.add_child(TreeNode.new(9))
-  # what = r_two_two.add_child(TreeNode.new(10))
-  # w = what.add_child(TreeNode.new(45))
-
-  #root.display
-end
-
-
-
-
-
-
-
-
-
-
